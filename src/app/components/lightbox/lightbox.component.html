@@ -1,0 +1,14 @@
+
+<div #mainLightbox class="main">
+	<div class="row">
+		<ng-content select="[image-col]"></ng-content>
+	</div>
+	<div id="lightboxImage" class="modal">
+		<span class="close cursor">&times;</span>
+		<div #mainModal class="modal-content">
+			<ng-content select="[image-dynamic]"></ng-content>
+			<a class="prev">&#10094;</a>
+			<a class="next">&#10095;</a>
+		</div>
+	</div>
+</div>
